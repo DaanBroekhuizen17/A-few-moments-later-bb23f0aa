@@ -8,27 +8,28 @@
 
 foreach( $inputArray as $value){
     $type = substr($value, -1);
+    $int = substr($value, 0, -1);
     switch($type){
         case "s":
-            $subtotal = $value * 1;
+            $subtotal = $int * 1;
             $total += $subtotal;
         break;
 
 
         case "m":
-            $subtotal = $value * 60;
+            $subtotal = $int * 60;
             $total += $subtotal;
         break;
 
 
         case "u":
-            $subtotal = $value * 3600;
+            $subtotal = $int * 3600;
             $total += $subtotal;
         break;
 
 
         case "d":
-            $subtotal = $value * 86400;
+            $subtotal = $int * 86400;
             $total += $subtotal;
         break;
 

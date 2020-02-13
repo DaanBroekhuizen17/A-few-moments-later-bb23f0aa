@@ -33,6 +33,16 @@ foreach( $inputArray as $value){
             $total += $subtotal;
         break;
 
+        case "y":
+            $subtotal = $int * 31556926;
+            $total += $subtotal;
+        break;
+
+        case "b":
+            $subtotal = $int * 63113852000;
+            $total += $subtotal;
+        break;
+
 
     }
 
